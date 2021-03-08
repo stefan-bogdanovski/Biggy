@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Order the best pizza in town NOW."/>
+    <meta name="keywords" content="Pizza Order Ingredients Online Biggy Pizzeria"/>
+    <link rel="shortcut icon" href="img/logo.png">
+     <script src="https://kit.fontawesome.com/0f0bb38c5e.js" crossorigin="anonymous"></script>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/awselect.min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/style.min.css" type="text/css" rel="stylesheet"/>
+    <title>Pizzeria Biggy</title>
+</head> 
+<body>
+    <!-- nav -->
+  <div class="container-fluid bg-crna">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 d-flex">
+                
+             <h1 class="logo sakrij boja">
+                   <a href="#" class="d-block pr-3">biggy </a> 
+            </h1>
+            <img src="img/logo.png" class="img-fluid max sakrij" alt="Logo"/>
+
+        </div>
+        <div class="col-lg-6 col-md-12 ">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="d-flex">
+                        <h1 class="logo prikazi boja">
+                                biggy
+                                </h1>
+                                <img src="img/logo.png" class="img-fluid max sakrij prikazi" alt="Logo"/>
+                            </div>
+                        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                          <div class="navbar-nav mx-auto" id="navlista">
+                            <a class="nav-item nav-link text-light mr-5 d-block" href="#aboutUS">About</a>
+                            <a class="nav-item nav-link text-light mr-5 d-block" href="#pizzaLink">Pizzas</a>
+                            <a class="nav-item nav-link text-light d-block" href="#narudzbina">Order</a>
+                          </div>
+                        </div>
+                      </nav>
+        </div>
+    </div>
+    </div>
+  </div>
+  <!-- background slider -->
+  <div class="container-fluid p-0 m-0 relative slika">
+      <div class="container-fluid absolute text-light tamno pt-4">
+          <div class="container">
+            <div class="row d-flex space-around">
+                <div class="col-lg-6 col-md-12 text-center mt-5">
+                    <a href="#narudzbina"><h2 class="order crna fontf mt-3 mx-auto" id="orderNow"> Order pizza now! </h2> </a>
+                    <p id="pizzaOpis" class="mt-5">Meet our delicious pizzas <br/> whose recipes originate from Italy.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 text-center pizza mt-5 mb-5" id="slajder">
+                    <img src="img/proba1.png" class="show" alt="Pica capricciosa"/>
+                    <img src="img/proba2.png" alt="Ovo je margherita"/>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+  <div class="container-fluid p-0 mt-5 pb-5" >
+      <span id="aboutUS"></span>
+      <div class="row">
+        <div data-aos="fade-right" class="col-lg-6 col-md-12 text-center">
+          
+          <h3 class="crna text-center pt-2" id="about">Little something about us!</h3>
+       
+        </div>
+        <div  data-aos="fade-left" class="col-lg-6 col-md-12 text-center">
+          <div class="text-center">
+          <img src="img/about.jpg"  id="slika" class="mx-auto img-fluid borderZaSliku" alt="OurPizzeria"/>
+        </div>
+        </div>
+      </div>
+  </div>
+  <div class="container-fluid bg-slika">
+    <div class="container pb-5" id="drzacZaPice">
+      <h3 class="crna text-center pt-5" id="pizzaLink">Pizzas</h3>
+
+    </div>
+  </div>
+  <div class="container-fluid bg-plava pb-4">
+    <div class="container">
+      <h3 class="text-center pt-5 mb-3 pb-4 text-light" id="narudzbina">Order your pizza here!</h3> 
+      <div class="row">
+        <div class="col-lg-12">
+            <form method="GET" action="#">
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="ime" class="boja font-weight-bold ml-2">First name <span class="boja">*</span> </label>
+                    <input type="text" class="form-control" id="ime" placeholder=""/>
+                    <div class="d-none">
+                        <p class="text-danger font-weight-bold">Name must start with capital letter and be at least 3 characters long.</p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 mb-3" >
+                    <label for="prezime" class="boja font-weight-bold ml-2">Last name</label> <span class="boja">*</span> </label>
+                    <input type="text" class="form-control" id="prezime" placeholder=""/>
+                    <div class="d-none">
+                        <p class="text-danger font-weight-bold">Last name must start with capital letter and be at least 3 characters long.</p>
+                      </div>
+                  </div>
+               
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="brojTelefona" class="boja font-weight-bold ml-2">Contact (phone) number <span class="boja">*</span></label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="brojTelefona" placeholder="" aria-describedby="validationTooltipUsernamePrepend"/>
+                          <div class="d-none">
+                              <p class="font-weight-bold text-danger">Phone number must start with +3816 and be between 11 and 13 characters or start with 06 and be between 9 and 10 characters.</p>
+                            </div>
+                        </div>
+                      </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="adresa" class="boja font-weight-bold ml-2">Address <span class="boja">*</span></label>
+                    <input type="text" class="form-control" id="adresa" placeholder="" />
+                    <div class="d-none">
+                        <p class="text-danger font-weight-bold">Please enter a valid address.<br/>Address must start with capital letter.  </p>
+                      </div>
+                  </div>
+                </div>
+                <div class="form-row" >
+                  <div class="col-md-3 mt-4" id="picaSelect">
+                    <label for="izaberiPicu" class="boja font-weight-bold">Select pizza <span class="boja">*</span></label> <br/>
+                    <select id="izaberiPicu" class="bg-transparent text-light">
+                  
+                    </select>
+                    <div class="d-none">
+                      <p class="text-danger font-weight-bold">You must choose pizza.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mt-4" id="picaSize">
+                    <label for="" class="boja font-weight-bold">Select pizza size <span class="boja">*</span></label> <br/>
+                    <input type="radio" name="size" value="32" class="ml-4"/> <span class="boja font-weight-bold">32cm</span> <br/>
+                    <input type="radio" name="size" value="50" class="ml-4"/> <span class="boja font-weight-bold">50cm</span> 
+                    <div class="d-none">
+                        <p class="text-danger font-weight-bold">You must choose pizza size.</p>
+                    </div>
+                  </div>
+                   <div class="col-md-6 mt-4" id="dodaci">
+                     <label for="" class="boja text-center">Additional ingredients <br/>(optional)</label>
+
+                   </div>
+                </div>
+                <div class="form-row mt-3">
+                    <button type="button" id="send">Order now</button>
+                </div>
+              </form>
+    </div>
+    </div>
+    </div>
+  </div>
+  <div class="container-fluid pt-3 bg-slika">
+    <div class="container">
+      <div class="row">
+      <div class="col-lg-4 text-center pt-3">
+          <h4 class="font-weight-bold"> When do we work? </h4>
+          <p><i class="far fa-clock"></i>Monday-Satruday: 24h-00h</p>
+          <i class="fas fa-truck"></i> Delivery available between 12:00h and 22:00h
+      </div>
+      <div class="col-lg-4 text-center pt-3">
+        <h4 class="font-weight-bold">Visit us on social media!</h4>
+        <p class="d-flex justify-content-center pt-3"><a href="#" class="mr-4 ml-3"><i class="fab fa-facebook"></i> </a> <a href="#" class="mr-4"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="mr-4"><i class="fab fa-instagram"></i> </a> <a href="#" class="mr-4"><i class="fab fa-youtube"></i> </a>
+        </p>
+      </div>
+      <div class="col-lg-4 text-center pt-3">
+        <h4  class="font-weight-bold">Some useful links!</h4>
+        <p>
+          <a href="http://stefanb.000webhostapp.com/" class="crna hoveruj" target="_blank">Author</a>
+          <a href="dokumentacija.pdf" target="_blank"  class="crna hoveruj">Documentation</a>
+          <a href="http://technologyy.netlify.com"  class="crna hoveruj" target="_blank">My other project</a>
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
